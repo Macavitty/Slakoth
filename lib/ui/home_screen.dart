@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_arch/res/colors.dart';
 import 'package:flutter_arch/res/strings.dart';
 import 'package:flutter_arch/ui/result_screen.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 
 
 class HomeScreen extends StatefulWidget {

@@ -23,7 +23,8 @@ class CustomInputField extends StatelessWidget {
           style: new TextStyle(
             fontSize: 20.0,
             color: textDefaultColor,
-          )),
+          ),
+      ),
     );
   }
 }

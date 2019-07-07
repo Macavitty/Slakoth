@@ -12,10 +12,10 @@ import 'home_screen.dart';
 
 // ignore: must_be_immutable
 class StartScreen extends StatelessWidget {
-  TextEditingController controller = TextEditingController();
+  TextEditingController controller;
 
-
-  bool nickController(BuildContext context) { // TODO convert to middleware
+  // TODO convert to middleware
+  bool nickController(BuildContext context) {
     String s = controller.text;
     if (s != "") return true;
     return false;
@@ -34,7 +34,7 @@ class StartScreen extends StatelessWidget {
                 children: <Widget>[
                   CustomInputField(
                     hint: nickHintString,
-                    controller: controller,
+                    controller: controller = TextEditingController(text: viewModel.nick),
                   ),
                   MegaSimpleCustomButton(
                       onPressed: () {

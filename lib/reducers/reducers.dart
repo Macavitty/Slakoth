@@ -7,7 +7,9 @@ AppState appReducer(AppState state, action) => AppState(pokemons: state.pokemons
 
 
 String _updNick(String currNick, UpdNickAction action) => action.newNick;
+
 int _increment(int currCounter, IncrementCounterAction action) => currCounter + 1;
+
 
 final Reducer<int> counterStateReducer = combineReducers<int>([
   TypedReducer<int, IncrementCounterAction>(_increment),
